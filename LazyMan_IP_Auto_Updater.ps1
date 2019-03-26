@@ -24,7 +24,7 @@ $LazymanCurrentIP = (Test-Connection $LazymanURL -count 1).IPV4ADDRESS.IPAddress
 if ($LazymanCurrentIP -ne $LazymanHostsIP) {
     ## Update the Hosts File with the new IP
     Write-Host "Updates Are Being Applied"
-    (Get-Content $HostFile).replace($LazymanHostsIP, $LazymanCurrentIP) | Set-Content .\test.txt
+    (Get-Content $HostFile).replace($LazymanHostsIP, $LazymanCurrentIP) | Set-Content $HostFile
 }else{
     ## Display That the script is not updating
     Write-Host "No Updates To Be Performed"
