@@ -42,3 +42,10 @@ Example (runs at 11pm (23) every day)
     - *(Optional)* Can uncheck the **Start the task only is the computer is on AC Power** as this task isn't very intensive/time consuming and can be performed when on battery power
     - *(Optional)* Could set the *Start only if the following network connection is available* as this script does require internet
 3. Save the Scheduled task - at this point you will have to enter your password allowing it to run the script as an administrator
+
+
+### Testing Windows
+1. Make a copy of the host file (C:\Windows\System32\drivers\etc\hosts) just incase anything happens, the old version is kept
+2. Modify the IP that you entered in for **(LATEST IP FOR powersports.ml)** with a wrong IP address
+2. While in Task Scheduler, right-click on the task that you just created and click **Run**
+3. Open up the Hosts file to make sure that the IP for the LazyMan entries were corrected!
