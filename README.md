@@ -8,15 +8,13 @@ Make sure you have the following Plex.bundle installed on your Plex server [nome
 1. Clone the repository under the  **/opt/** folder
 2. Add a few lines to the end of the hosts file (make sure to replace **(LATEST IP FOR powersports.ml)** with the actual IP)
 
-```### LazyMan Plex-Plugin```
-
-```#powersports.ml-(LATEST IP FOR powersports.ml)```
-
-```(LATEST IP FOR powersports.ml) mf.svc.nhl.com```
-
-```(LATEST IP FOR powersports.ml) mlb-ws-mf.media.mlb.com```
-
-```(LATEST IP FOR powersports.ml) playback.svcs.mlb.com```
+```
+### LazyMan Plex-Plugin
+#powersports.ml-(LATEST IP FOR powersports.ml)
+(LATEST IP FOR powersports.ml) mf.svc.nhl.com
+(LATEST IP FOR powersports.ml) mlb-ws-mf.media.mlb.com
+(LATEST IP FOR powersports.ml) playback.svcs.mlb.com
+```
 
 3. Edit the crontab to add/create the scheduled task ([crontab Guide](https://crontab.guru/)) pointing to the cloned script
 > sudo crontab -e
