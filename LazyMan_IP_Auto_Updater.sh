@@ -25,9 +25,9 @@ LazymanCurrent=`dig +short $LazymanURL`
 ## Check if the Current IP is different than the stored one
 if [ "$LazymanCurrent" != "$LazymanHosts" ]; then
     ## Update the Hosts File with the new IP
-    echo "Updating Are Being Applied"
+    echo "Updates Are Being Applied"
     sed -i "s/$LazymanHosts/$LazymanCurrent/g" /etc/hosts > cat /etc/hosts
 else
     ## Display That the script is not updating
-    echo "No Updated To Be Performed"
+    echo "No Updates To Be Performed"
 fi
