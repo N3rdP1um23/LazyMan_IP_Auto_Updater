@@ -15,18 +15,18 @@
 
 ## Variables
 LazymanURL='powersports.ml'
-LazymanHosts=''
-LazymanCurrent=''
+LazymanHostsIP=''
+LazymanCurrentIP=''
 
 ## Grab the current stored IP address and ping for the current one
-LazymanHosts=`cat /etc/hosts | grep "#$LazymanURL-" | sed "s/#$LazymanURL-//g"`
-LazymanCurrent=`dig +short $LazymanURL`
+LazymanHostsIP=`cat /etc/hosts | grep "#$LazymanURL-" | sed "s/#$LazymanURL-//g"`
+LazymanCurrentIP=`dig +short $LazymanURL`
 
 ## Check if the Current IP is different than the stored one
-if [ "$LazymanCurrent" != "$LazymanHosts" ]; then
+if [ "$LazymanCurrentIP" != "$LazymanHostsIP" ]; then
     ## Update the Hosts File with the new IP
     echo "Updates Are Being Applied"
-    sed -i "s/$LazymanHosts/$LazymanCurrent/g" /etc/hosts > cat /etc/hosts
+    sed -i "s/$LazymanHostsIP/$LazymanCurrentIP/g" /etc/hosts > cat /etc/hosts
 else
     ## Display That the script is not updating
     echo "No Updates To Be Performed"
