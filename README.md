@@ -3,7 +3,7 @@ A scheduled task that is setup to refresh the IP's for LazyMan with the latest I
 
 ## Installing the Script
 1. Clone the repository under the  **/opt/** folder
-2. Add a static line to the end of the hosts file (make sure to replace **(LATEST IP FOR powersports.ml )** with the actual latest IP address)
+2. Add a static line to the end of the hosts file (make sure to replace **(LATEST IP FOR powersports.ml)** with the actual IP)
 
 ```### LazyMan Plex-Plugin```
 
