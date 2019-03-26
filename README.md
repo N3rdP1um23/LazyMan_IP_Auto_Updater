@@ -9,5 +9,8 @@ A scheduled task that is setup to refresh the IP's for LazyMan with the latest I
 
 ```#powersports.ml-(LATEST IP FOR powersports.ml)```
 
-3. Edit the crontab to add/create the scheduled task ([crontab Guide](https://crontab.guru/))
+3. Edit the crontab to add/create the scheduled task ([crontab Guide](https://crontab.guru/)) pointing to the cloned script
 > sudo crontab -e
+
+Example (runs at 11pm (23) every day)
+> 0 23 * * * /opt/LazyMan_IP_Auto_Updater/LazyMan_IP_Auto_Updater.sh
