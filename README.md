@@ -1,6 +1,15 @@
 # LazyMan IP Auto Updater
 A scheduled task that is setup to refresh the IP's for LazyMan with the latest IP's if found.
 
+### Quick Links
+* [Plex LazyMan Bundle](https://github.com/N3rdP1um23/LazyMan_IP_Auto_Updater#plex-requirement)
+* [Pre-Install Operations](https://github.com/N3rdP1um23/LazyMan_IP_Auto_Updater#pre-install-operations---must-be-performed-before-initializing-the-scripts)
+* [Installing the Scripts - Linux](https://github.com/N3rdP1um23/LazyMan_IP_Auto_Updater#installing-the-script---linux)
+* [Installing the Scripts - Windows](https://github.com/N3rdP1um23/LazyMan_IP_Auto_Updater#installing-the-script---windows)
+* [Testing the Scheduled Task - Windows](https://github.com/N3rdP1um23/LazyMan_IP_Auto_Updater#testing-windows)
+
+____
+
 ## Plex Requirement
 Make sure you have the following Plex.bundle installed on your Plex server [nomego/Lazyman.bundle](https://github.com/nomego/Lazyman.bundle)
 
@@ -14,6 +23,8 @@ Mare sure that the following lines are included in your machines hosts file.  Al
 (LATEST IP FOR powersports.ml) playback.svcs.mlb.com
 ```
 
+____
+
 ## Installing the Script - Linux
 1. Clone the repository under the  **/opt/** folder
 2. Edit the crontab to add/create the scheduled task ([crontab Guide](https://crontab.guru/)) pointing to the cloned script
@@ -21,6 +32,8 @@ Mare sure that the following lines are included in your machines hosts file.  Al
 
 Example (runs at 11pm (23) every day)
 > 0 23 * * * /opt/LazyMan_IP_Auto_Updater/LazyMan_IP_Auto_Updater.sh
+
+____
 
 ## Installing the Script - Windows
 * The Scheduled Task needs **Higher Provileges** in-order to update the Hosts file
