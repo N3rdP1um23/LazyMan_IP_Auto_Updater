@@ -1,6 +1,9 @@
 # LazyMan IP Auto Updater
 A scheduled task that is setup to refresh the IP's for LazyMan with the latest IP's if found.
 
+## Plex Requirement
+Make sure you have the following Plex.bundle installed on your Plex server [nomego/Lazyman.bundle](https://github.com/nomego/Lazyman.bundle)
+
 ## Installing the Script
 1. Clone the repository under the  **/opt/** folder
 2. Add a static line to the end of the hosts file (make sure to replace **(LATEST IP FOR powersports.ml)** with the actual IP)
